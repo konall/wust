@@ -4,7 +4,12 @@ version = "0.1.0"
 edition = "2021"
 license = "MPL-2.0"
 description = "a wee Rust-style language that can be compiled in a WASM environment"
+repository = "https://github.com/konall/wust"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+wasmi = { version = "0.29", default-features = false }
+syn = { version = "2", features = ["visit", "full", "extra-traits"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4"] }
