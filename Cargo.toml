@@ -3,7 +3,7 @@ name = "wust"
 version = "0.1.0"
 edition = "2021"
 license = "MPL-2.0"
-description = "a wee Rust-style language that can be compiled in a WASM environment"
+description = "a wee Rust-style language that can be interpeted in a WASM environment"
 repository = "https://github.com/konall/wust"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
