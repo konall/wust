@@ -268,13 +268,6 @@ impl<'ast> syn::visit::Visit<'ast> for Program {
     }
 }
 
-pub fn run(file: &str) {
-    use syn::visit::Visit;
-    
-    let src = syn::parse_file(file).unwrap();
-    Program::default().visit_file(&src);
-}
-
 pub fn eval(src: &str) {
     use syn::visit::Visit;
     
